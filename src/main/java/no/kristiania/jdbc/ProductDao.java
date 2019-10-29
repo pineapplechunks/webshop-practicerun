@@ -1,7 +1,6 @@
 package no.kristiania.jdbc;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class ProductDao {
@@ -13,6 +12,6 @@ public class ProductDao {
     }
 
     public List<String> listAll() {
-        return Collections.singletonList("Apples");
+        return products;
     }
 }
