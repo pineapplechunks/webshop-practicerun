@@ -61,7 +61,7 @@ public class ProductDao {
         PGSimpleDataSource dataSource = new PGSimpleDataSource();
         dataSource.setUrl("jdbc:postgresql://localhost:5432/webshop");
         dataSource.setUser("webshop");
-        dataSource.setPassword(properties.getProperty("cuteanimal19"));
+        dataSource.setPassword(properties.getProperty("dataSource.password"));
         ProductDao productDao = new ProductDao(dataSource);
         productDao.insertProduct(productName);
 
